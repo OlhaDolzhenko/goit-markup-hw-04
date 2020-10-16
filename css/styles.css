@@ -29,6 +29,7 @@ body {
 .link {
   font-style: normal;
   text-decoration: none;
+  cursor: pointer;
 }
 
 img {
@@ -137,6 +138,15 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-light-theme-color);
 }
+
+.header-mail::before {
+  content: "";
+}
+
+.header-tel-link::before {
+  content: "";
+}
+
 /*  ============ END HEADER  ============ */
 
 /*  ============ HERO  ============ */
@@ -224,6 +234,35 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-light-theme-color);
 }
+
+.advantages-list-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background: var(--background-light-theme);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-antenna::before {
+  background-image: url("../images/svg/antenna.svg");
+}
+
+.icon-clock::before {
+  background-image: url("../images/svg/clock.svg");
+}
+
+.icon-diagram::before {
+  background-image: url("../images/svg/diagram.svg");
+}
+
+.icon-astronaut::before {
+  background-image: url("../images/svg/astronaut.svg");
+}
+
 /*  ============ END ADVANTAGES  ============ */
 
 /*  ============ ACTIVITIES  ============ */
