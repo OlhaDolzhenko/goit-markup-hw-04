@@ -169,9 +169,6 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-}
-
-.overlay {
   max-width: 1600px;
   min-height: 600px;
   margin-left: auto;
@@ -443,9 +440,17 @@ img {
   fill: var(--icon-theme);
 }
 
-.clients-list-link:hover .clients-list-svg {
+.clients-list-link:hover .clients-list-svg,
+.clients-list-link:focus .clients-list-svg {
   fill: var(--accent-color);
 }
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border: 1px solid var(--accent-color);
+}
+
+/*  ============ END CLIENTS  ============ */
 
 /*  ============ PORTFOLIO PROJECTS  ============ */
 .projects .container {
@@ -486,7 +491,11 @@ img {
   flex-wrap: wrap;
 }
 
-.projects-list-item:hover {
+.projects-list-link {
+  display: block;
+}
+
+.projects-list-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
